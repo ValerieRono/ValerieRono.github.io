@@ -1,4 +1,5 @@
 var height,width,color;
+
 // When size is submitted by the user, call makeGrid()
 $('#sizePicker').submit(function (event){
 	event.preventDefault();
@@ -17,6 +18,7 @@ function makeGrid() {
 			$('tr:last').append('<td></td>');
 		}
 	}
+
 	//set color to cell when cell is clicked by user
 	$('td').click(function addColor(){
     // Select color input
